@@ -1,37 +1,43 @@
 *{
     margin: 0;
     padding: 0;
-    color: white;
-}
-
-body {
-    
-    background-image: url('./imgs/Trator com Criancas.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: top;
-    
-}
-
-body main {
-    background:  linear-gradient(rgba(0, 0, 0, 0), rgba(37, 33, 33, 0.63), rgba(74, 74, 74, 1));
+    color: rgb(0, 0, 0);
 }
 
 header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.199);
-    border: white 0.1rem solid;
-    margin: 1rem 2rem 0rem 2rem;
-    border-radius: 0.5rem;
+    justify-content: space-around;
+    height: 8vh;
+    width: 100%;
+    background-color: #333333;
+    /* position: fixed;
+    z-index: 10; */
+    gap: 0rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+
+header .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+header h1 {
+    color: white;
+    font-weight: bold;
 }
 
 header img {
-    width: 4rem;
-    height: 4rem;
-    margin: 0.4rem;
+    width: 7vh;
+    height: 7vh;
+    margin: 0rem;
+    border-radius: 0.2rem;
 }
 
 header nav ul {
@@ -40,69 +46,134 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul li {
-    margin: 0.1rem;
-}
-
-header nav ul li a {
+header nav a {
+    color: white;
+    font-size: 1rem;
     text-decoration: none;
-    font-weight: bold;
-    
-    padding: 0.2rem 0.5rem;
+    margin: 0 0.4rem;
 }
 
-header nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 0.2rem;
-    padding: 0.2rem 0.5rem;
+header nav a:hover {
+    color: rgb(255, 0, 0);
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0 0.4rem;
 }
 
-
-
-.welcome {
+section.welcome.parallax {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 70rem;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+
 }
+
+section.welcome.parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient( to bottom,rgba(0, 0, 0, 0) 0,rgba(0, 0, 0, 0) 40%, #000 100%);
+}
+
+section.welcome.parallax.parallax1 {
+    background-image: url(./imgs/Trator\ com\ Criancas.jpg);
+}
+
+section.welcome.parallax h1, section.welcome.parallax h2, section.welcome.parallax a {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    z-index: 9;
+    text-transform: uppercase;
+}
+
+section.welcome.parallax h1 {
+    font-weight: 500;
+    font-size: 4.5rem;
+}
+
+section.welcome.parallax h2 {
+    font-size: 2rem;
+}
+
+section.welcome.parallax a {
+    width: fit-content;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #0000006c;
+    border-color: white;
+    border-style: solid;
+    border-width: 0.1rem;
+    margin: 1rem auto;
+}
+
+section.welcome.parallax a:hover {
+    background-color: #000000a6;
+    border-radius: 0.7rem;
+}
+
 
 article {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    margin: 1rem auto;
 }
 
 article section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    margin: 2rem;
+    width: 50%;
+    margin: 2rem auto;
 }
 
-.left-side {
+article section h2 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+article .left-side {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    width: 50rem;
 }
 
-.right-side {
+article .right-side {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
-    width: 50rem;
 }
 
 footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 10vh;
+    width: 100%;
     background-color: #333333;
-    height: 10rem;
+}
+
+footer p {
+    color: white;
+    font-size: 1rem;
 }
