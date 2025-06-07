@@ -7,6 +7,11 @@
     font-style: normal;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -227,26 +232,71 @@ section.quiz.parallax h2 {
 
 
 #quizInterativo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 50rem;
     width: 80%;
-    border-color: white;
-    border-style: solid;
-    border-width: 0.1rem;
-    margin: 1rem auto;
+    margin: 2rem auto;
+    border-radius: 1rem;
     background-color: rgb(13, 13, 122);
+    padding: 1rem;
+}
 
+#quizInterativo h2 {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem;
+    font-size: 3rem;
+    color: white;
+    text-align: left;
 }
 
 #quizAnswerBtns {
     display: flex;
     flex-direction: column;
-    
+    gap: 1rem;
+    border: 1rem;
+    padding: 8rem;
 }
 
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 2px solid #000000;
+    padding: 0.5rem;
+    height: 3rem;
+    text-align: left;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: #fff;
+}
+
+#quizNextBtn {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background: #9aeabc;
+}
+
+.incorrect {
+    background: #ff9393;
+}
 
 footer {
     display: flex;
