@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     color: rgb(0, 0, 0);
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header {
@@ -90,7 +93,6 @@ section.welcome.parallax.parallax1 {
 
 section.welcome.parallax h1, section.welcome.parallax h2, section.welcome.parallax a {
     font-family: "Anton", sans-serif;
-    font-weight: 400;
     font-style: normal;
     color: white;
     text-align: center;
@@ -100,16 +102,16 @@ section.welcome.parallax h1, section.welcome.parallax h2, section.welcome.parall
 
 section.welcome.parallax h1 {
     font-weight: 500;
-    font-size: 4.5rem;
+    font-size: 5rem;
 }
 
 section.welcome.parallax h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 section.welcome.parallax a {
     width: fit-content;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -123,7 +125,10 @@ section.welcome.parallax a {
 section.welcome.parallax a:hover {
     background-color: #000000a6;
     border-radius: 0.7rem;
+    color: rgb(255, 0, 0);
+    transform: scale(.98);
 }
+
 
 
 article {
@@ -142,10 +147,14 @@ article section {
 }
 
 article section h2 {
-    font-family: "Libre Baskerville", serif;
     font-weight: bold;
-    font-style: normal;
     font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+article section p {
+    font-size: 1rem;
+    line-height: 1.5rem;
     margin-bottom: 1rem;
 }
 
@@ -162,6 +171,82 @@ article .right-side {
     align-items: flex-end;
     text-align: right;
 }
+
+article .imgs {
+    width: 80%;
+    height: auto;
+    margin: 2rem auto;
+}
+
+
+section.quiz.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+section.quiz.parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient( to bottom,rgba(0, 0, 0, 0) 0,rgba(0, 0, 0, 0) 40%, #000 100%);
+}
+
+section.quiz.parallax.parallax2 {
+    background-image: url(./imgs/Seguranca\ Publica.jpg);
+}
+
+section.quiz.parallax h1, section.quiz.parallax h2 {
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    z-index: 9;
+    text-transform: uppercase;
+}
+
+section.quiz.parallax h1 {
+    font-weight: 500;
+    font-size: 5rem;
+}
+
+section.quiz.parallax h2 {
+    font-size: 1.7rem;
+}
+
+
+#quizInterativo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    width: 80%;
+    border-color: white;
+    border-style: solid;
+    border-width: 0.1rem;
+    margin: 1rem auto;
+    background-color: rgb(13, 13, 122);
+
+}
+
+#quizAnswerBtns {
+    display: flex;
+    flex-direction: column;
+    
+}
+
 
 footer {
     display: flex;
