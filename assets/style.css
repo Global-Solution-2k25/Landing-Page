@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    width: 100%;
+    background-color: #333333;
+    /* position: fixed;
+    z-index: 10; */
+    gap: 0rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+
+header .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+header h1 {
+    color: white;
+    font-weight: bold;
+}
+
+header img {
+    width: 7vh;
+    height: 7vh;
+    margin: 0rem;
+    border-radius: 0.2rem;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+header nav a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0 0.4rem;
+}
+
+header nav a:hover {
+    color: rgb(255, 0, 0);
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0 0.4rem;
+}
+
+section.welcome.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+section.welcome.parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient( to bottom,rgba(0, 0, 0, 0) 0,rgba(0, 0, 0, 0) 40%, #000 100%);
+}
+
+section.welcome.parallax.parallax1 {
+    background-image: url(./imgs/Trator\ com\ Criancas.jpg);
+}
+
+section.welcome.parallax h1, section.welcome.parallax h2, section.welcome.parallax a {
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    z-index: 9;
+    text-transform: uppercase;
+}
+
+section.welcome.parallax h1 {
+    font-weight: 500;
+    font-size: 5rem;
+}
+
+section.welcome.parallax h2 {
+    font-size: 1.7rem;
+}
+
+section.welcome.parallax a {
+    width: fit-content;
+    font-size: 1.7rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #0000006c;
+    border-color: white;
+    border-style: solid;
+    border-width: 0.1rem;
+    margin: 1rem auto;
+}
+
+section.welcome.parallax a:hover {
+    background-color: #000000a6;
+    border-radius: 0.7rem;
+    color: rgb(255, 0, 0);
+    transform: scale(.98);
+}
+
+
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    margin: 1rem auto;
+}
+
+article section {
+    width: 50%;
+    margin: 2rem auto;
+}
+
+article section h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+article section p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+article .left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+article .right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+article .imgs {
+    width: 80%;
+    height: auto;
+    margin: 2rem auto;
+}
+
+
+section.quiz.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+section.quiz.parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient( to bottom,rgba(0, 0, 0, 0) 0,rgba(0, 0, 0, 0) 40%, #000 100%);
+}
+
+section.quiz.parallax.parallax2 {
+    background-image: url(./imgs/Seguranca\ Publica.jpg);
+}
+
+section.quiz.parallax h1, section.quiz.parallax h2 {
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    z-index: 9;
+    text-transform: uppercase;
+}
+
+section.quiz.parallax h1 {
+    font-weight: 500;
+    font-size: 5rem;
+}
+
+section.quiz.parallax h2 {
+    font-size: 1.7rem;
+}
+
+
+#quizInterativo {
+    height: 50rem;
+    width: 80%;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    background-color: rgb(13, 13, 122);
+    padding: 1rem;
+}
+
+#quizInterativo h2 {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem;
+    font-size: 3rem;
+    color: white;
+    text-align: left;
+}
+
+#quizAnswerBtns {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1rem;
+    padding: 8rem;
+}
+
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 2px solid #000000;
+    padding: 0.5rem;
+    height: 3rem;
+    text-align: left;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: #fff;
+}
+
+#quizNextBtn {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background: #9aeabc;
+}
+
+.incorrect {
+    background: #ff9393;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    background-color: #333333;
+}
+
+footer p {
+    color: white;
+    font-size: 1rem;
+}
