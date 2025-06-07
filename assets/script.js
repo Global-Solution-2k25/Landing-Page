@@ -150,3 +150,10 @@ function selectAnswer(e) {
   nextButton.style.display = "block";
 }
 
+function showScore() {
+  resetState();
+  questionElement.innerHTML = `Você acertou ${score} de ${questions.length}!`;
+  nextButton.innerHTML = "Play Again";
+  nextButton.style.display = "block";
+}
+
